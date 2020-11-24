@@ -12,7 +12,7 @@ body {
     padding: 0;
     min-width: 320px;
     cursor: url(/assets/icons/etwercrsr.png), auto;
-    background-color: gray;
+    background-color: rgb(209, 209, 209);
 }
 
 .cartoonmap {
@@ -31,7 +31,8 @@ body {
     width: 100%;
 }
 
-.julycolumn {
+
+/*.julycolumn {
     height: 208px;
     position: absolute;
     top: 75.2%;
@@ -107,4 +108,4 @@ body {
     filter: drop-shadow(0 0 20px black);
     transition: 0.5s;
     backface-visibility: hidden;
-}
+}*/
