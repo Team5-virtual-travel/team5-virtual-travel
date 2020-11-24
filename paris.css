@@ -1,1 +1,110 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
+body {
+    font-size: 2rem;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    cursor: url(/assets/icons/etwercrsr.png), auto;
+    background-color: gray;
+}
+
+.cartoonmap {
+    position: relative;
+    height: 90%;
+    width: 90%;
+}
+
+.map-element:hover {
+    filter: url(#shadow);
+}
+
+.map {
+    /* position: absolute; */
+    left: 0;
+    width: 100%;
+}
+
+.julycolumn {
+    height: 208px;
+    position: absolute;
+    top: 75.2%;
+    left: 53.5%;
+}
+
+.julycolumn:hover {
+    filter: drop-shadow(0 0 20px black);
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.arcdetriomphe {
+    height: 72px;
+    position: absolute;
+    top: 57.1%;
+    left: 27%;
+}
+
+.arcdetriomphe:hover {
+    filter: drop-shadow(0 0 20px black);
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.sacredheart {
+    height: 153.5px;
+    position: absolute;
+    top: 1.5%;
+    left: 55%;
+}
+
+.sacredheart:hover {
+    filter: drop-shadow(0 0 20px black);
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.notredame {
+    height: 53.2px;
+    position: absolute;
+    top: 74.4%;
+    left: 42.4%;
+}
+
+.notredame:hover {
+    filter: drop-shadow(0 0 20px black);
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.eiffeltower {
+    height: 206px;
+    position: absolute;
+    top: 56.5%;
+    left: 30.4%;
+}
+
+.eiffeltower:hover {
+    filter: drop-shadow(0 0 20px black);
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.louvremuseum {
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    left: 37%;
+}
+
+.louvremuseum:hover {
+    filter: drop-shadow(0 0 20px black);
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
