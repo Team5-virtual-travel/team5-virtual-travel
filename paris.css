@@ -1,1 +1,93 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+     
+  }
+  
+  img {
+      width: 100%;
+  }
+  
+  .gridcontainer {
+  display: grid;
+  grid-template-columns: 600px 4fr 4fr;
+  grid-template-rows: repeat(4, 166px);
+    grid-gap: 2rem;
+    background-color:#e8dac7;
+  
+  }
+  
+  .gridone {
+      display: grid;
+      grid-column: 1;
+  }
+  
+  .gridtwo {
+      
+      grid-column-start: 2;
+      grid-column-end: 4;
+      text-align: center;
+  }
+  
+  .heading {
+      font-family: 'La Belle Aurore', cursive;
+      font-size: 5rem;
+  
+  }
+  
+  .info {
+  font-family: 'IM Fell French Canon', serif;
+  line-height: 2;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 0.8rem;
+  }
+  
+  .gridthree {
+      grid-column-start: 2;
+  grid-column-end:4 ;
+   grid-row-start: 3 ;
+       grid-row-end: 3; 
+           text-align: center;
+           background-color: #B1A19B
+           
+    
+       
+  }
+  
+  .menu {
+  width: 200px;
+  }
+  
+  
+  .gridfour {
+    grid-column-start: 1;
+    grid-column-end:4 ;
+     grid-row-start: 3 ;
+         grid-row-end: 3; 
+             text-align: left;
+             background-color: #B1A19B
+             section {
+                background-color: #eee;
+                box-sizing: border-box;
+                padding: 100px;
+            }
+            div {
+                box-sizing: border-box;
+                display: inline-block;
+                height: 150px;
+                padding: 50px;
+                text-align: center;
+                width: 50%;
+            }
+            .green {
+                background: lightgreen;
+            }
+            .blue {
+                background: lightblue;
+            }
