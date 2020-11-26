@@ -20,10 +20,41 @@ body {
     background-color: rgb(209, 209, 209);
 }
 
+.input {
+    margin-top: 100px;
+    text-align: center;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 600px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.display {
+    text-align: center;
+}
+
 .cartoonmap {
+    margin-top: 50px;
+    margin-bottom: 50px;
     position: relative;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
 
 .map-element:hover {
@@ -40,6 +71,18 @@ body {
     margin-top: 100px;
     margin-bottom: 100px;
     align-items: center;
+}
+
+.sectitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restsstory {
+    max-width: 650px;
+    margin: 40px;
+    text-align: center;
 }
 
 .works {
@@ -105,6 +148,7 @@ body {
 }
 
 .work .title {
+    margin-top: 60px;
     font-size: 5rem;
     text-align: center;
 }
@@ -148,6 +192,7 @@ body {
 .rbtn p {
     max-width: 650px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .restsbtn {
@@ -165,4 +210,9 @@ body {
 
 .restsbtn:hover {
     transform: scale(1.05);
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
 }
