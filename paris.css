@@ -85,7 +85,7 @@ input[type="text"] {
     text-align: center;
 }
 
-.works {
+.restaurants {
     display: grid;
     grid-auto-flow: column;
     gap: 10px;
@@ -101,14 +101,14 @@ input[type="text"] {
 
 .restsstory {}
 
-.work {
+.restaurantcard {
     height: 60rem;
     position: relative;
     perspective: 800px;
 }
 
-.work .fore,
-.work .back {
+.restaurantcard .fore,
+.restaurantcard .back {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -116,11 +116,11 @@ input[type="text"] {
     transition: 0.6s;
 }
 
-.work .fore {
+.restaurantcard .fore {
     z-index: 2;
 }
 
-.work .back {
+.restaurantcard .back {
     padding: 4rem;
     box-sizing: border-box;
     transform: rotateY(-180deg);
@@ -133,11 +133,11 @@ input[type="text"] {
     overflow: auto;
 }
 
-.work:hover .fore {
+.restaurantcard:hover .fore {
     transform: rotateY(180deg);
 }
 
-.work:hover .back {
+.restaurantcard:hover .back {
     transform: rotateY(0deg);
 }
 
@@ -147,13 +147,13 @@ input[type="text"] {
     object-fit: cover;
 }
 
-.work .title {
+.restaurantcard .title {
     margin-top: 60px;
     font-size: 5rem;
     text-align: center;
 }
 
-.work .description {
+.restaurantcard .description {
     line-height: 1.5;
     text-align: center;
 }
