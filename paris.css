@@ -20,6 +20,56 @@ body {
     background-color: rgb(209, 209, 209);
 }
 
+.weather {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherstory {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.partofweather2nd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherappcard {
+    height: 200px;
+    width: 200px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #FFF9F9;
+}
+
+.weathericon {
+    height: 300px;
+    width: 100px;
+}
+
+.wheretogosction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.where {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .input {
     margin-top: 100px;
     text-align: center;
