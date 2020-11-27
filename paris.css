@@ -262,8 +262,3 @@ input[type="text"] {
 .restsbtn:hover {
     transform: scale(1.05);
 }
-
-footer {
-    background-color: black;
-    color: whitesmoke;
-}
