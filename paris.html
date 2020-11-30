@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Travel</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:ital,wght@0,400;0,600;1,300;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="paris.css">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=La+Belle+Aurore&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="/assets/icons/et.png">
+    <title>Virtual Travel</title>
 </head>
+
 <body>
     
-
 <section class="welcome">
     <!-- -video as background   -->
-    <nav>
-        <a href="">Home</a>
-        <a href="">Accomodation</a>
-        <a href="">Restaurants</a>
-        <a href="">Touristic Places</a>
+    <nav class="navbar">
+        <a class="navlink" href="">Home</a>
+        <a class="navlink" href="">Accomodation</a>
+        <a class="navlink" href="">Restaurants</a>
+        <a class="navlink" href="">Touristic Places</a>
     </nav>
     <video id="welcomeVideo" autoplay muted loop>
         <source src="media/Paris 2.mp4" type="video/mp4">
@@ -31,13 +31,16 @@
     <div class="introText">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt soluta ad at delectus quae quas earum ducimus
             ullam veniam, eveniet qui sint exercitationem laboriosam quibusdam maxime laudantium quo recusandae,
-            molestiae consequatur perferendis? Sunt, placeat culpa nesciunt quam vitae vel voluptatem officia! Labore ad
-            ea at veritatis mollitia illo tenetur totam.</p>
+            molestiae consequatur perferendis?
+            Sunt, placeat culpa nesciunt quam vitae vel voluptatem officia! Labore ad ea at veritatis mollitia illo
+            tenetur totam.</p>
     </div>
     <!-- -some french picture  -->
     <img class="introParisImg" src="media/frenchtoast.webp" alt="image of a french toast cartoon">
 
 </section>
+
+
 
 
 
@@ -73,6 +76,34 @@
 
     </section>
    
+    <section class="weather">
+        <!-- 
+            -weather Api  
+            -choose between 2 activities
+            -options what to do or go
+        -->
+    
+        <p class="weatherstory">Before you go, lets have a look at the weather so that you can choose a suiting activity</p>
+    
+        <div class="partofweather2nd">
+            <div class="weatherappcard">
+                <h2 class="temp">9 "C</h2>
+                <img class="weathericon" src="/assets/icons/weather/sun.png" alt="weather icon">
+                <h5 class="weatheranem">partly cloudy</h5>
+            </div>
+    
+            <div class="wheretogosction">
+                <p class="description">Where would you like to go?</p>
+                <div class="where">
+                    <a href="#" class="brbtn" target="blank">Le Louvre</a>
+                    <a href="#" class="brbtn" target="blank">The eiffel tower</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+
 
 
 <section class="cafe">
@@ -135,10 +166,6 @@
 
 
 
- 
-
-   
-
 
 <section class="Notre dame">
     
@@ -164,12 +191,117 @@
     </div>
 </section>
 
-<footer> 
-    Group 5 Hyper Island - Ephraim Valladares - Tuva Åkerlund - Hamed Khomjani - Elsa Bynke
-    </footer>
+
+    
+    
+    <section class="cartoonmap">
+        <svg width="100%" height="auto" viewBox="0 0 2415 1610" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <filter id="shadow" x="0" y="0" width="200%" height="200%">
+                    <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+                    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="20" />
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                </filter>
+            </defs>
+            <title>cartoonmap</title>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <image id="map" x="0" y="0" width="2415" height="1610" href="/assets/images/map/map.png"></image>
+                <a href="https://goo.gl/maps/Hc7Bth58wzEMh4EJA" target="blank"><image id="angel" class="map-element angel" x="2045.49328" y="764" width="133.013436" height="525" href="/assets/images/map/angel.png"></image></a>
+                <a href="https://goo.gl/maps/mvsss4YSYULPehA36" target="blank"><image id="louvr" class="map-element louvr" x="1405.08045" y="663" width="204.839098" height="146" href="/assets/images/map/louvr.png"></image></a>
+                <a href="https://goo.gl/maps/8npYBGVZVuaMm2vi6" target="blank"><image id="arcdeteriomph" class="map-element arcdeteriomph" x="1031" y="433" width="185" height="187" href="/assets/images/map/arcdeteriomph.png"></image></a>
+                <a href="https://goo.gl/maps/StmvVom49i6Ext8X7" target="blank"><image id="bigone" class="map-element bigone" x="1497.994" y="9" width="281.916" height="382" href="/assets/images/map/bigone.png"></image></a>
+                <a href="https://goo.gl/maps/GeUBjzmVP8TuDVey7" target="blank"><image id="church" class="map-element church" x="1620.9388" y="757" width="123.122407" height="130" href="/assets/images/map/church.png"></image></a>
+                <a href="https://goo.gl/maps/aEQhDtutXoMHhRgX6" target="blank"><image id="et" class="map-element et" x="1162.2375" y="423" width="210.525" height="525" href="/assets/images/map/et.png"></image></a>
+            </g>
+        </svg>
+
+    </section>
+
+    <section class="eiffel">
+        <!-- 
+            - info
+            -youtube link to a eiffel tower video
+            -map APi   -->
+    </section>
+    <section class="louvre">
+        <!-- 
+            - info
+            -youtube link to a louvre video
+            -map APi  
+            -link to section "coffee" -->
+    </section>
+    
+
+    <!-- <section class="restaurant"> -->
+        <!-- 
+    - recomendations of 3 restaurants 
+    -link to restaurant menu
+    - pictures
+    - map Api
+     -->
+        <div class="sectitle">
+            <h2 class="rests">Restaurants</h2>
+            <p class="restsstory">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque quo itaque quisquam consectetur cupiditate esse alias laborum velit veritatis iste, voluptate perferendis consequatur, nemo suscipit repellendus tempore est doloremque.</p>
+        </div>
+        <div class="restaurants">
+            <div class="restaurantcard">
+                <div class="fore">
+                    <img class="image" src="/assets/images/restaurant/1.jpg" alt="Bofinger restaurant">
+                </div>
+                <div class="back">
+                    <h2 class="title">Bofinger</h2>
+                    <p class="description">Restaurants serving beer brewed on the premises were all kinds of trendy in the second half of the 19th century. One of the best surviving examples today is Bofinger, located right next to the site of the former Bastille prison. The
+                        food is largely inspired by the Alsace region, so think sauerkraut, sausages, ham, and other parts of the pig that are all just fantastic. The Belle Epoque dining room is magical and unapologetically Parisian, with generally fewer
+                        tourists than its brasserie brethren.</p>
+                    <div class="backcardbtn">
+                        <a href="https://www.bofingerparis.com/menus-carte/?utm_source=Google&utm_medium=GMB&utm_campaign=BOF" class="brbtn" target="blank">Menu</a>
+                        <a href="https://www.bofingerparis.com/" class="brbtn" target="blank">Websit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurantcard">
+                <div class="fore">
+                    <img class="image" src="/assets/images/restaurant/l'escrgot.jpg" alt="Bofinger restaurant">
+                </div>
+                <div class="back">
+                    <h2 class="title">L’Escargot Montorgueil</h2>
+                    <p class="description">It’s all about the cuisine of the Burgundy region at this 19th-century eatery, and that means snails. Buttery and garlicky, it’s basically a given that you’ll order some while sitting inside a dining room trimmed with dark wood and
+                        a burgundy-red décor. The restaurant, like many on this list, is a historical monument, and the prices reflect a dining experience in a sumptuous Second Empire establishment -- but it does have a sort of snack menu with various
+                        salads, egg dishes, and soups that are more reasonably priced.
+
+                    </p>
+                    <div class="backcardbtn">
+                        <a href="http://escargotmontorgueil.com/#menu" class="brbtn" target="blank">Menu</a>
+                        <a href="http://escargotmontorgueil.com/" class="brbtn" target="blank">Websit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurantcard">
+                <div class="fore">
+                    <img class="image" src="/assets/images/restaurant/le_train_bleu.jpg" alt="Bofinger restaurant">
+                </div>
+                <div class="back">
+                    <h2 class="title">Le Train Bleu</h2>
+                    <p class="description">When you think of train travel, good food rarely comes to mind, but at the Gare de Lyon train station, this little jewel box of a restaurant might change your mind. Whether you’re heading off to the south of France or just want a classic
+                        French meal, Le Train Bleu dining room -- entirely renovated in 2014 -- is the youngest on this list, but one of the most stunning. It’s no wonder Coco Chanel and Brigitte Bardot were regulars here.</p>
+                    <div class="backcardbtn">
+                        <a href="https://menuonline.fr/clients/iframe.php?id=1330" class="brbtn" target="blank">Menu</a>
+                        <a href="https://www.le-train-bleu.com/" class="brbtn" target="blank">Websit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rbtn">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda voluptates eveniet laboriosam doloribus nulla maiores. Unde nobis non magnam libero? Quos cumque quo obcaecati nobis animi reprehenderit iusto ipsa.</p>
+            <a class="restsbtn">Go for more!</a>
+        </div>
+    </section>
+
 
     <script src="paris.js"></script>
 </body>
+<footer> Group 5 Hyper Island - Ephraim Valladares - Tuva Åkerlund - Hamed Khomjani - Elsa Bynke</footer>
 
 </html>
 
+</html>
