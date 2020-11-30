@@ -436,6 +436,10 @@
         align-items: center;
     }
     
+    .wheretogosction .description {
+        font-size: 20px;
+    }
+    
     .where {
         margin-top: 40px;
         display: flex;
