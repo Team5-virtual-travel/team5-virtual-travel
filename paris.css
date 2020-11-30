@@ -1,14 +1,12 @@
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
-
 
 
 /* html {
@@ -27,6 +25,7 @@ body {
     cursor: url(/assets/icons/etwercrsr.png), auto;
     background-color: rgb(209, 209, 209);
 } */
+
 
 /* welcome section-----------------------------------------  */
 
@@ -102,22 +101,22 @@ body {
 
 
 /* hotel section  */
-.gridcontainer{
-display: grid;
-grid-template-columns: 400px 2fr 4fr 4fr;
-grid-template-rows: repeat(4, 166px);
-  grid-gap: 2rem;
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 400px 2fr 4fr 4fr;
+    grid-template-rows: repeat(4, 166px);
+    grid-gap: 2rem;
 }
 
 .gridone {
     display: grid;
     grid-column: 1;
-        grid-row-start: 1 ;
-     grid-row-end: 2 ;
-     width: 550px;
-     margin-left: 25px;
-     margin-top: 20px;
-     
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 550px;
+    margin-left: 25px;
+    margin-top: 20px;
 }
 
 .hotel2 {
@@ -133,16 +132,15 @@ grid-template-rows: repeat(4, 166px);
     text-align: center;
     margin-top: 150px;
     width: 500px;
-    
 }
 
 .info {
-font-size: 20px;
-line-height: 2;
-padding: 30px;
-font-family: 'IM Fell French Canon', serif;
-line-height: 2;
-font-size: 1rem;
+    font-size: 20px;
+    line-height: 2;
+    padding: 30px;
+    font-family: 'IM Fell French Canon', serif;
+    line-height: 2;
+    font-size: 1rem;
 }
 
 .gridtwo2 {
@@ -151,178 +149,143 @@ font-size: 1rem;
     grid-row-start: 1;
     grid-row-end: 1;
     text-align: center;
-     font-family: 'La Belle Aurore', cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: rgb(0, 109, 167);
     font-size: 4.2rem;
     margin-left: 200px;
 }
 
-
-
-
-
 .shangria {
-width: 500px;
-
+    width: 500px;
 }
-
-
 
 .gridthree {
-width: 21.5rem;
- grid-column-start: 2;
-grid-column-end: 3;
- grid-row-start: 2;
- grid-row-end: 3;
- margin-left: 155px;
-
-
+    width: 21.5rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left: 155px;
 }
-
 
 .gridfive {
-   
-grid-column-start: 1;
+    grid-column-start: 1;
     grid-column-end: 1;
- grid-row-start: 3 ;
-     grid-row-end: 4;
-    margin-left: 25px;       
-
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: 25px;
 }
-
 
 
 /* Cafe section  */
+
 .gridcafeone {
     display: grid;
     grid-column: 1;
-        grid-row-start: 1 ;
-     grid-row-end: 2 ;
-     width: 400px;
-     margin-left: 25px;
-     margin-top: 20px;
-     
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 400px;
+    margin-left: 25px;
+    margin-top: 20px;
 }
 
-
 .gridcafetwo {
-    
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
     text-align: center;
-    
-
 }
 
 .heading {
     font-family: 'La Belle Aurore', cursive;
     color: rgb(167, 0, 0);
     font-size: 4.5rem;
-     
-
 }
 
 .gridcafetwo2 {
-    
-   grid-column-start: 3;
+    grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
     margin-top: 8rem;
     margin-right: 2.5rem;
-    text-align: center; 
-} 
+    text-align: center;
+}
 
 .infocafe {
-font-family: 'IM Fell French Canon', serif;
-line-height: 2;
-font-size: 0.9rem;
-padding:20px;
+    font-family: 'IM Fell French Canon', serif;
+    line-height: 2;
+    font-size: 0.9rem;
+    padding: 20px;
 }
 
 .gridcafethree {
     grid-column-start: 3;
-grid-column-end:4 ;
- grid-row-start: 3;
-     grid-row-end: 4; 
-         text-align: center;
-         margin-top: 180px;
-  margin-left: 150px;
-     
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    margin-top: 180px;
+    margin-left: 150px;
 }
 
 .menu {
     padding: 0.3rem;
-width: 180px;
-color: rgb(167, 0, 0);
-border: rgb(4, 82, 4) solid 2.5px;
+    width: 180px;
+    color: rgb(167, 0, 0);
+    border: rgb(4, 82, 4) solid 2.5px;
     font-family: 'La Belle Aurore', cursive;
     font-size: 1.5rem;
-
-
 }
 
 .menu:hover {
     background-color: rgb(4, 82, 4);
 }
 
-
 .gridcafefour {
-width: 23rem;
- grid-column-start: 2;
-grid-column-end: 3;
- grid-row-start: 2;
- grid-row-end: 3;
-justify-self: start;
- margin-right: 25px;
- margin-top: 130px;
-
-
-
-
+    width: 23rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: start;
+    margin-right: 25px;
+    margin-top: 130px;
 }
 
 .coffee {
-     /* border-radius: 7%; */
-     margin-left: 8px;
-
+    /* border-radius: 7%; */
+    margin-left: 8px;
 }
 
-
-.gridcafefive{
- grid-column-start: 2;
+.gridcafefive {
+    grid-column-start: 2;
     grid-column-end: 3;
- grid-row-start: 2;
-     grid-row-end: 3;
-     text-align: center;
-     width: 23rem;
-     align-items: center;
-     margin-top: 70px;
-     margin-left:9px;
-    
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    width: 23rem;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 9px;
 }
 
 .info2 {
-    background-color:rgb(4, 82, 4);
-         padding: 5px;
-         font-size: 18px;
-         color: white;
-
+    background-color: rgb(4, 82, 4);
+    padding: 5px;
+    font-size: 18px;
+    color: white;
 }
 
-
 .gridcafesix {
-grid-column-start: 2;
+    grid-column-start: 2;
     grid-column-end: 3;
- grid-row-start: 1 ;
-     grid-row-end: 2;
-     margin-top: 20px;
-          margin-right: 15px;
-          justify-self: end;
-
-
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 20px;
+    margin-right: 15px;
+    justify-self: end;
 }
 
 .bw {
@@ -330,30 +293,31 @@ grid-column-start: 2;
 }
 
 .gridcafeseven {
-   
-grid-column-start: 1;
+    grid-column-start: 1;
     grid-column-end: 1;
- grid-row-start: 3 ;
-     grid-row-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
     margin-left: 25px;
-     margin-top: 140px;       
-
+    margin-top: 140px;
 }
 
 .gridcafeeight {
-grid-column-start: 3;
+    grid-column-start: 3;
     grid-column-end: 4;
- grid-row-start: 3 ;
-     grid-row-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
     margin-left: 25px;
-     margin-top: 140px;  
+    margin-top: 140px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-   /* Notre dame section  */
-  
+   
+
+/* Notre dame section  */
+
+
   
   
   .gridnotrecontainer {
@@ -473,9 +437,17 @@ grid-column-start: 3;
     background-color: #FFF9F9;
 }
 
-.weathericon {
+.city {
+    color: white;
+    font-weight: bold;
+    background-color: #1d5775;
+    padding: 5px 30px 5px 30px;
+    border-radius: 30px;
+}
+
+.weather-icon {
     margin: 10px;
-    font-size: large;
+    height: 90px;
 }
 
 .wheretogosction {
