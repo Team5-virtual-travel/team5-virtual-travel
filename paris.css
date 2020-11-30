@@ -354,11 +354,9 @@ grid-column-start: 3;
   
    /* Notre dame section  */
   
-  /* img {
-      width: 100%;
-  }
   
-  .gridcontainer {
+  
+  .gridnotrecontainer {
   display: grid;
   grid-template-columns: 600px 4fr 4fr;
   grid-template-rows: repeat(4, 166px);
@@ -367,12 +365,12 @@ grid-column-start: 3;
   
   }
   
-  .gridone {
+  .gridnotreone {
       display: grid;
       grid-column: 1;
   }
   
-  .gridtwo {
+  .gridnotretwo {
       
       grid-column-start: 2;
       grid-column-end: 4;
@@ -385,7 +383,7 @@ grid-column-start: 3;
   
   }
   
-  .info {
+  .infonotre {
   font-family: 'IM Fell French Canon', serif;
   line-height: 2;
   margin-left: 3rem;
@@ -393,7 +391,7 @@ grid-column-start: 3;
   font-size: 0.8rem;
   }
   
-  .gridthree {
+  .gridnotrethree {
       grid-column-start: 2;
   grid-column-end:4 ;
    grid-row-start: 3 ;
@@ -405,12 +403,10 @@ grid-column-start: 3;
        
   }
   
-  .menu {
-  width: 200px;
-  }
   
   
-  .gridfour {
+  
+  .gridnotrefour {
     grid-column-start: 1;
     grid-column-end:4 ;
      grid-row-start: 3 ;
