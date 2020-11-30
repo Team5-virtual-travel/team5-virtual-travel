@@ -1,15 +1,13 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    width: 100%;
-}
-
-
-/* html {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img {
+        width: 100%;
+    }
+    /* html {
     height: 100%;
     font-size: 62.5%;
     overflow-x: hidden;
@@ -25,638 +23,611 @@ body {
     cursor: url(/assets/icons/etwercrsr.png), auto;
     background-color: rgb(209, 209, 209);
 } */
-
-
-/* welcome section-----------------------------------------  */
-
-.welcome {
-    position: relative;
-}
-
-.navlink {
-    color: white;
-    text-decoration: none;
-    padding: 0 3rem 0 2.5rem;
-    cursor: pointer;
-}
-
-.navlink:hover {
-    font-size: 7px;
-    color: red;
-}
-
-.navbar {
-    position: fixed;
-    background-color: #000000;
-    height: 3rem;
-    width: 100vw;
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 1.2rem;
-}
-
-#welcomeVideo {
-    object-fit: cover;
-    /* position: fixed; */
-    width: 100vw;
-    height: 105vh;
-    z-index: -1;
-}
-
-
-/* intro ------------------------------------------------ */
-
-.intro {
-    height: 103vh;
-    background-color: #fff9e0;
-    text-align: center;
-}
-
-.welcomeText {
-    font-family: "Dancing Script", cursive;
-    font-size: 2.7rem;
-    padding-top: 4rem;
-}
-
-.introText {
-    position: absolute;
-    font-family: Montserrat;
-    width: 60vw;
-    margin-left: 20rem;
-    margin-top: 10rem;
-    z-index: 2;
-    line-height: 40px;
-    font-size: 20px;
-}
-
-.introParisImg {
-    float: right;
-    height: 40vh;
-    width: 23vw;
-    z-index: -1;
-    margin-top: 20rem;
-    border-radius: 50%;
-}
-
-
-/* hotel section  */
-
-.gridcontainer {
+    /* welcome section-----------------------------------------  */
+    
+    .welcome {
+        position: relative;
+    }
+    
+    .navlink {
+        color: white;
+        text-decoration: none;
+        padding: 0 3rem 0 2.5rem;
+        cursor: pointer;
+    }
+    
+    .navlink:hover {
+        font-size: 7px;
+        color: red;
+    }
+    
+    .navbar {
+        position: fixed;
+        background-color: #000000;
+        height: 3rem;
+        width: 100vw;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 1.2rem;
+    }
+    
+    #welcomeVideo {
+        object-fit: cover;
+        /* position: fixed; */
+        width: 100vw;
+        height: 105vh;
+        z-index: -1;
+    }
+    /* intro ------------------------------------------------ */
+    
+    .intro {
+        height: 103vh;
+        background-color: #fff9e0;
+        text-align: center;
+    }
+    
+    .welcomeText {
+        font-family: "Dancing Script", cursive;
+        font-size: 2.7rem;
+        padding-top: 4rem;
+    }
+    
+    .introText {
+        position: absolute;
+        font-family: Montserrat;
+        width: 60vw;
+        margin-left: 20rem;
+        margin-top: 10rem;
+        z-index: 2;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    
+    .introParisImg {
+        float: right;
+        height: 40vh;
+        width: 23vw;
+        z-index: -1;
+        margin-top: 20rem;
+        border-radius: 50%;
+    }
+    /* hotel section  */
+    
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 400px 2fr 4fr 4fr;
+        grid-template-rows: repeat(4, 166px);
+        grid-gap: 2rem;
+    }
+    
+    .gridone {
+        display: grid;
+        grid-column: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 550px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    
+    .hotel2 {
+        /* border-radius: 5%; */
+    }
+    
+    .gridtwo {
+        display: grid;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        text-align: center;
+        margin-top: 150px;
+        width: 500px;
+    }
+    
+    .info {
+        font-size: 20px;
+        line-height: 2;
+        padding: 30px;
+        font-family: 'IM Fell French Canon', serif;
+        line-height: 2;
+        font-size: 1rem;
+    }
+    
+    .gridtwo2 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: center;
+        font-family: 'La Belle Aurore', cursive;
+        color: rgb(0, 109, 167);
+        font-size: 4.2rem;
+        margin-left: 200px;
+    }
+    
+    .shangria {
+        width: 500px;
+    }
+    
+    .gridthree {
+        width: 21.5rem;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 155px;
+    }
+    
+    .gridfive {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-left: 25px;
+    }
+    /* Cafe section  */
+    
+    .gridcafeone {
+        display: grid;
+        grid-column: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 400px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    
+    .gridcafetwo {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: center;
+    }
+    
+    .heading {
+        font-family: 'La Belle Aurore', cursive;
+        color: rgb(167, 0, 0);
+        font-size: 4.5rem;
+    }
+    
+    .gridcafetwo2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 8rem;
+        margin-right: 2.5rem;
+        text-align: center;
+    }
+    
+    .infocafe {
+        font-family: 'IM Fell French Canon', serif;
+        line-height: 2;
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+    
+    .gridcafethree {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        text-align: center;
+        margin-top: 180px;
+        margin-left: 150px;
+    }
+    
+    .menu {
+        padding: 0.3rem;
+        width: 180px;
+        color: rgb(167, 0, 0);
+        border: rgb(4, 82, 4) solid 2.5px;
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 1.5rem;
+    }
+    
+    .menu:hover {
+        background-color: rgb(4, 82, 4);
+    }
+    
+    .gridcafefour {
+        width: 23rem;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: start;
+        margin-right: 25px;
+        margin-top: 130px;
+    }
+    
+    .coffee {
+        /* border-radius: 7%; */
+        margin-left: 8px;
+    }
+    
+    .gridcafefive {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: center;
+        width: 23rem;
+        align-items: center;
+        margin-top: 70px;
+        margin-left: 9px;
+    }
+    
+    .info2 {
+        background-color: rgb(4, 82, 4);
+        padding: 5px;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .gridcafesix {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 20px;
+        margin-right: 15px;
+        justify-self: end;
+    }
+    
+    .bw {
+        width: 370px;
+    }
+    
+    .gridcafeseven {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-left: 25px;
+        margin-top: 140px;
+    }
+    
+    .gridcafeeight {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-left: 25px;
+        margin-top: 140px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    /* Notre dame section  */
+    /*
+.gridnotrecontainer {
     display: grid;
-    grid-template-columns: 400px 2fr 4fr 4fr;
+    grid-template-columns: 600px 4fr 4fr;
     grid-template-rows: repeat(4, 166px);
     grid-gap: 2rem;
+    background-color: #e8dac7;
 }
 
-.gridone {
+.gridnotreone {
     display: grid;
     grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 550px;
-    margin-left: 25px;
-    margin-top: 20px;
 }
 
-.hotel2 {
-    /* border-radius: 5%; */
-}
-
-.gridtwo {
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    text-align: center;
-    margin-top: 150px;
-    width: 500px;
-}
-
-.info {
-    font-size: 20px;
-    line-height: 2;
-    padding: 30px;
-    font-family: 'IM Fell French Canon', serif;
-    line-height: 2;
-    font-size: 1rem;
-}
-
-.gridtwo2 {
+.gridnotretwo {
     grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    text-align: center;
-    font-family: 'La Belle Aurore', cursive;
-    color: rgb(0, 109, 167);
-    font-size: 4.2rem;
-    margin-left: 200px;
-}
-
-.shangria {
-    width: 500px;
-}
-
-.gridthree {
-    width: 21.5rem;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin-left: 155px;
-}
-
-.gridfive {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin-left: 25px;
-}
-
-
-/* Cafe section  */
-
-.gridcafeone {
-    display: grid;
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 400px;
-    margin-left: 25px;
-    margin-top: 20px;
-}
-
-.gridcafetwo {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-column-end: 4;
     text-align: center;
 }
 
 .heading {
     font-family: 'La Belle Aurore', cursive;
-    color: rgb(167, 0, 0);
-    font-size: 4.5rem;
+    font-size: 5rem;
 }
 
-.gridcafetwo2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-top: 8rem;
-    margin-right: 2.5rem;
-    text-align: center;
-}
-
-.infocafe {
+.infonotre {
     font-family: 'IM Fell French Canon', serif;
     line-height: 2;
-    font-size: 0.9rem;
-    padding: 20px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 0.8rem;
 }
 
-.gridcafethree {
-    grid-column-start: 3;
+.gridnotrethree {
+    grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
-    grid-row-end: 4;
-    text-align: center;
-    margin-top: 180px;
-    margin-left: 150px;
-}
-
-.menu {
-    padding: 0.3rem;
-    width: 180px;
-    color: rgb(167, 0, 0);
-    border: rgb(4, 82, 4) solid 2.5px;
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 1.5rem;
-}
-
-.menu:hover {
-    background-color: rgb(4, 82, 4);
-}
-
-.gridcafefour {
-    width: 23rem;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: start;
-    margin-right: 25px;
-    margin-top: 130px;
-}
-
-.coffee {
-    /* border-radius: 7%; */
-    margin-left: 8px;
-}
-
-.gridcafefive {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
     grid-row-end: 3;
     text-align: center;
-    width: 23rem;
-    align-items: center;
-    margin-top: 70px;
-    margin-left: 9px;
+    background-color: #B1A19B
 }
 
-.info2 {
-    background-color: rgb(4, 82, 4);
-    padding: 5px;
-    font-size: 18px;
-    color: white;
-}
-
-.gridcafesix {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-top: 20px;
-    margin-right: 15px;
-    justify-self: end;
-}
-
-.bw {
-    width: 370px;
-}
-
-.gridcafeseven {
+.gridnotrefour {
     grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin-left: 25px;
-    margin-top: 140px;
-}
-
-.gridcafeeight {
-    grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
-    grid-row-end: 4;
-    margin-left: 25px;
-    margin-top: 140px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-   
+    grid-row-end: 3;
+    text-align: left;
+    background-color: #B1A19B;
+    section {
+        background-color: #eee;
+        box-sizing: border-box;
+        padding: 100px;
+    }
+    div {
+        box-sizing: border-box;
+        display: inline-block;
+        height: 150px;
+        padding: 50px;
+        text-align: center;
+        width: 50%;
+    }
+    .green {
+        background: lightgreen;
+    }
+    .blue {
+        background: lightblue;
+    }
 
-/* Notre dame section  */
-
-
-  
-  
-  .gridnotrecontainer {
-  display: grid;
-  grid-template-columns: 600px 4fr 4fr;
-  grid-template-rows: repeat(4, 166px);
-    grid-gap: 2rem;
-    background-color:#e8dac7;
-  
-  }
-  
-  .gridnotreone {
-      display: grid;
-      grid-column: 1;
-  }
-  
-  .gridnotretwo {
-      
-      grid-column-start: 2;
-      grid-column-end: 4;
-      text-align: center;
-  }
-  
-  .heading {
-      font-family: 'La Belle Aurore', cursive;
-      font-size: 5rem;
-  
-  }
-  
-  .infonotre {
-  font-family: 'IM Fell French Canon', serif;
-  line-height: 2;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  font-size: 0.8rem;
-  }
-  
-  .gridnotrethree {
-      grid-column-start: 2;
-  grid-column-end:4 ;
-   grid-row-start: 3 ;
-       grid-row-end: 3; 
-           text-align: center;
-           background-color: #B1A19B
-           
     
-       
-  }
-  
-  
-  
-  
-  .gridnotrefour {
-    grid-column-start: 1;
-    grid-column-end:4 ;
-     grid-row-start: 3 ;
-         grid-row-end: 3; 
-             text-align: left;
-             background-color: #B1A19B
-             section {
-                background-color: #eee;
-                box-sizing: border-box;
-                padding: 100px;
-            }
-            div {
-                box-sizing: border-box;
-                display: inline-block;
-                height: 150px;
-                padding: 50px;
-                text-align: center;
-                width: 50%;
-            }
-            .green {
-                background: lightgreen;
-            }
-            .blue {
-                background: lightblue;
-            }
-
-
-
-
-
-
-/* Weather section */
-
-.weather {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.weatherstory {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    text-align: center;
-}
-
-.partofweather2nd {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.weatherappcard {
-    height: 200px;
-    width: 200px;
-    margin-right: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    background-color: #FFF9F9;
-}
-
-.city {
-    color: white;
-    font-weight: bold;
-    background-color: #1d5775;
-    padding: 5px 30px 5px 30px;
-    border-radius: 30px;
-}
-
-.weather-icon {
-    margin: 10px;
-    height: 90px;
-    width: 90px;
-}
-
-.wheretogosction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.where {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.input {
-    margin-top: 100px;
-    text-align: center;
-}
-
-input[type="text"] {
-    height: 50px;
-    width: 600px;
-    background: #e7e7e7;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-}
-
-input[type="text"] {
-    height: 50px;
-    width: 100px;
-    background: #e7e7e7;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-}
-
-.display {
-    text-align: center;
-}
-
-.cartoonmap {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-.map-element:hover {
-    filter: url(#shadow);
-}
-
-.map {
-    position: absolute;
-    left: 0;
-    width: 100%;
-}
-
-.restaurant {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    align-items: center;
-}
-
-.sectitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.restsstory {
-    max-width: 650px;
-    margin: 40px;
-    text-align: center;
-}
-
-.restaurants {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 10px;
-}
-
-.rests {
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 7rem;
-    text-align: center;
-}
-
-.restsstory {}
-
-.restaurantcard {
-    height: 60rem;
-    position: relative;
-    perspective: 800px;
-}
-
-.restaurantcard .fore,
-.restaurantcard .back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    transition: 0.6s;
-}
-
-.restaurantcard .fore {
-    z-index: 2;
-}
-
-.restaurantcard .back {
-    padding: 4rem;
-    box-sizing: border-box;
-    transform: rotateY(-180deg);
-    z-index: 1;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-}
-
-.restaurantcard:hover .fore {
-    transform: rotateY(180deg);
-}
-
-.restaurantcard:hover .back {
-    transform: rotateY(0deg);
-}
-
-.image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.restaurantcard .title {
-    margin-top: 60px;
-    font-size: 5rem;
-    text-align: center;
-}
-
-.restaurantcard .description {
-    line-height: 1.5;
-    text-align: center;
-}
-
-.backcardbtn {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.brbtn {
-    text-decoration: none;
-    margin: 40px;
-    color: rgb(255, 255, 255);
-    padding: 10px 25px;
-    border-radius: 30px;
-    background: #1d5775;
-    border: 1px solid azure;
-    outline: none;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.brbtn:hover {
-    transform: scale(1.05);
-}
-
-.rbtn {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.rbtn p {
-    max-width: 650px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.restsbtn {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 10px 25px;
-    border-radius: 30px;
-    background: #1d5775;
-    border: 1px solid azure;
-    outline: none;
-    cursor: pointer;
-    max-width: 200px;
-    transition: .2s;
-}
-
-.restsbtn:hover {
-    transform: scale(1.05);
-}
-
-footer {
-    background-color: black;
-    color: whitesmoke;
-}
+    /* Weather section */
+    
+    .weather {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .weatherstory {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    
+    .partofweather2nd {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .weatherappcard {
+        height: 200px;
+        width: 200px;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        background-color: #FFF9F9;
+    }
+    
+    .city {
+        color: white;
+        font-weight: bold;
+        background-color: #1d5775;
+        padding: 5px 30px 5px 30px;
+        border-radius: 30px;
+    }
+    
+    .weather-icon {
+        margin: 10px;
+        height: 90px;
+        width: 90px;
+    }
+    
+    .wheretogosction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .where {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .input {
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    input[type="text"] {
+        height: 50px;
+        width: 600px;
+        background: #e7e7e7;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    input[type="text"] {
+        height: 50px;
+        width: 100px;
+        background: #e7e7e7;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .display {
+        text-align: center;
+    }
+    
+    .cartoonmap {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .map-element:hover {
+        filter: url(#shadow);
+    }
+    
+    .map {
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+    
+    .restaurant {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    
+    .sectitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .restsstory {
+        max-width: 650px;
+        margin: 40px;
+        text-align: center;
+    }
+    
+    .restaurants {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+    }
+    
+    .rests {
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 7rem;
+        text-align: center;
+    }
+    
+    .restsstory {}
+    
+    .restaurantcard {
+        height: 60rem;
+        position: relative;
+        perspective: 800px;
+    }
+    
+    .restaurantcard .fore,
+    .restaurantcard .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        transition: 0.6s;
+    }
+    
+    .restaurantcard .fore {
+        z-index: 2;
+    }
+    
+    .restaurantcard .back {
+        padding: 4rem;
+        box-sizing: border-box;
+        transform: rotateY(-180deg);
+        z-index: 1;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    
+    .restaurantcard:hover .fore {
+        transform: rotateY(180deg);
+    }
+    
+    .restaurantcard:hover .back {
+        transform: rotateY(0deg);
+    }
+    
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .restaurantcard .title {
+        margin-top: 60px;
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    .restaurantcard .description {
+        line-height: 1.5;
+        text-align: center;
+    }
+    
+    .backcardbtn {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .brbtn {
+        text-decoration: none;
+        margin: 40px;
+        color: rgb(255, 255, 255);
+        padding: 10px 25px;
+        border-radius: 30px;
+        background: #1d5775;
+        border: 1px solid azure;
+        outline: none;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    .brbtn:hover {
+        transform: scale(1.05);
+    }
+    
+    .rbtn {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rbtn p {
+        max-width: 650px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .restsbtn {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 25px;
+        border-radius: 30px;
+        background: #1d5775;
+        border: 1px solid azure;
+        outline: none;
+        cursor: pointer;
+        max-width: 200px;
+        transition: .2s;
+    }
+    
+    .restsbtn:hover {
+        transform: scale(1.05);
+    }
+    
+    footer {
+        background-color: black;
+        color: whitesmoke;
+    }
