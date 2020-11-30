@@ -5,6 +5,48 @@
   padding: 0;
 }
 
+
+
+/* footer---------------------------------------------------------------------------- */
+
+
+ 
+
+/* welcome section-----------------------------------------  */
+.welcome {
+  position: relative;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0 3rem 0 2.5rem;
+  cursor: pointer;
+}
+a:hover {
+  font-size: 7px;
+  color: red;
+}
+
+nav {
+  position: fixed;
+  background-color: #000000;
+  height: 3rem;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.2rem;
+}
+
+#welcomeVideo {
+  object-fit: cover;
+  /* position: fixed; */
+  width: 100vw;
+  height: 105vh;
+  z-index: -1;
+}
+
+
 body {
     background-color: white;
 }
@@ -13,7 +55,41 @@ img {
     width: 100%;
 }
 
+/* intro ------------------------------------------------ */
 
+.intro {
+  height: 100vh;
+  background-color: #fff9e0;
+  text-align: center;
+}
+
+.welcomeText {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.7rem;
+  padding-top: 4rem;
+}
+
+.introText {
+  position: absolute;
+  font-family: Montserrat;
+  width: 60vw;
+  margin-left: 20rem;
+  margin-top: 10rem;
+  z-index: 2;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.introParisImg {
+  float: right;
+  height: 40vh;
+  width: 23vw;
+  z-index: -1;
+  margin-top: 20rem;
+  border-radius: 50%;
+}
+
+/* hotel section  */
 .gridcontainer{
 display: grid;
 grid-template-columns: 400px 2fr 4fr 4fr;
@@ -37,6 +113,7 @@ grid-template-rows: repeat(4, 166px);
 }
 
 .gridtwo {
+    display: grid;
     
     grid-column-start: 3;
     grid-column-end: 5;
@@ -55,7 +132,6 @@ grid-template-rows: repeat(4, 166px);
     font-family: 'IM Fell French Canon', serif;
 line-height: 2;
 font-size: 1rem;
-margin-top: 25px;
 }
 
 .gridtwo2 {
@@ -107,6 +183,7 @@ grid-column-start: 1;
 
 
 
+/* Cafe section  */
 .gridcafeone {
     display: grid;
     grid-column: 1;
@@ -261,11 +338,102 @@ grid-column-start: 3;
      grid-row-end: 4;
     margin-left: 25px;
      margin-top: 140px;  
-}
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+   /* Notre dame section  */
+  
+  /* img {
+      width: 100%;
+  }
+  
+  .gridcontainer {
+  display: grid;
+  grid-template-columns: 600px 4fr 4fr;
+  grid-template-rows: repeat(4, 166px);
+    grid-gap: 2rem;
+    background-color:#e8dac7;
+  
+  }
+  
+  .gridone {
+      display: grid;
+      grid-column: 1;
+  }
+  
+  .gridtwo {
+      
+      grid-column-start: 2;
+      grid-column-end: 4;
+      text-align: center;
+  }
+  
+  .heading {
+      font-family: 'La Belle Aurore', cursive;
+      font-size: 5rem;
+  
+  }
+  
+  .info {
+  font-family: 'IM Fell French Canon', serif;
+  line-height: 2;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  font-size: 0.8rem;
+  }
+  
+  .gridthree {
+      grid-column-start: 2;
+  grid-column-end:4 ;
+   grid-row-start: 3 ;
+       grid-row-end: 3; 
+           text-align: center;
+           background-color: #B1A19B
+           
+    
+       
+  }
+  
+  .menu {
+  width: 200px;
+  }
+  
+  
+  .gridfour {
+    grid-column-start: 1;
+    grid-column-end:4 ;
+     grid-row-start: 3 ;
+         grid-row-end: 3; 
+             text-align: left;
+             background-color: #B1A19B
+             section {
+                background-color: #eee;
+                box-sizing: border-box;
+                padding: 100px;
+            }
+            div {
+                box-sizing: border-box;
+                display: inline-block;
+                height: 150px;
+                padding: 50px;
+                text-align: center;
+                width: 50%;
+            }
+            .green {
+                background: lightgreen;
+            }
+            .blue {
+                background: lightblue;
+            }
 
 
 
+  
 
+
+ */
 
 
 
