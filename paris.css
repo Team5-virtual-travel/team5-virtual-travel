@@ -426,6 +426,10 @@
         width: 90px;
     }
     
+    .temperature-description {
+        font-size: large;
+    }
+    
     .wheretogosction {
         display: flex;
         flex-direction: column;
