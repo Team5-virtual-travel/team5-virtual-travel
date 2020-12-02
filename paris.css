@@ -611,6 +611,13 @@ grid-column-start: 5;
 
   }
 
+  .headingeiffel {
+    font-family: 'La Belle Aurore', cursive;
+        color: rgb(0, 0, 0);
+        font-size: 4rem;
+        margin-left: 50px;
+  }
+
   .grideiffelone { 
  font-family: 'La Belle Aurore', cursive;
         color: rgb(0, 0, 0);
@@ -631,7 +638,142 @@ font-family: 'La Belle Aurore', cursive;
     grid-row-end: 1;
   }
 
+  .eiffelstory {
+        font-size: 22px;
+        letter-spacing: 1px;
+        max-width: 660px;
+        margin: 40px;
+        text-align: center;
+    }
   
+    
+    
+    .eiffelcard {
+        height: 70vh;
+        position: relative;
+        perspective: 800px;
+    }
+    
+    .eiffelcard .fore,
+    .eiffelcard .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        transition: 0.6s;
+    }
+    
+    .eiffelcard .fore {
+        z-index: 2;
+    }
+    
+    .eiffelcard .back {
+        padding: 3rem;
+        font-size: 15px;
+        box-sizing: border-box;
+        transform: rotateY(-180deg);
+        z-index: 1;
+        background-color: #FFF9E0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    
+    .eiffelcard:hover .fore {
+        transform: rotateY(180deg);
+    }
+    
+    .eiffelcard:hover .back {
+        transform: rotateY(0deg);
+    }
+    
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .eiffelcard .title {
+        margin-top: 15px;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'La Belle Aurore', cursive;
+
+    }
+
+    .eiffelcard .title1 {
+       margin-top: 120px;
+      font-family: 'La Belle Aurore', cursive;
+              font-size: 40px;
+                      text-align: center;
+
+
+
+    }
+    
+    .eiffelcard .description {
+        line-height: 1.5;
+        text-align: center;
+        font-size: large;
+        margin-top:15px;
+    }
+    
+    .backcardbtneiffel {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .brbtneiffel {
+        text-decoration: none;
+        margin: 20px;
+        color: rgb(255, 255, 255);
+        padding: 10px 25px;
+        border-radius: 30px;
+        background: #1d5775;
+        border: 1px solid azure;
+        outline: none;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    .brbtneiffel:hover {
+        transform: scale(1.05);
+    }
+    
+    .rbtn {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rbtn p {
+        font-size: 20px;
+        max-width: 650px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .restsbtn {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 25px;
+        border-radius: 30px;
+        background: #1d5775;
+        border: 1px solid azure;
+        outline: none;
+        cursor: pointer;
+        max-width: 200px;
+        transition: .2s;
+    }
+    
+    .restsbtn:hover {
+        transform: scale(1.05);
+    }
 
 
 /* Weather section */
