@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +12,15 @@
 
 <body>
 
-
     <section class="welcome">
-        <!-- -video as background   -->
         <nav class="navbar">
-            <a class="navlink" href="">Home</a>
-            <a class="navlink" href="">Accomodation</a>
-            <a class="navlink" href="#restaurant">Restaurants</a>
-            <a class="navlink" href="">Touristic Places</a>
-            <a class="navlink" href="#cartoonmap">Fast Travel</a>
+            <a class="navlink" href="#">Home</a>
+            <a class="navlink" href="">Paris Story</a>
+            <a class="navlink" href="">Hotels in Paris</a>
+            <a class="navlink" href="">Paris Weather</a>
+            <a class="navlink" href="">Tourist Map</a>
+            <a class="navlink" href="">Paris Cafes</a>
+            <a class="navlink" href="">Cuisine Parisienne</a>
         </nav>
         <video id="welcomeVideo" autoplay muted loop>
           <source src ="media/Paris 2.mp4" type="video/mp4">  
@@ -36,10 +35,12 @@
             </p>
         </div>
        <a href="#hotel"><button class="introbtn">Start exploring!</button></a>
-        <!-- -some french picture  -->
-        <!-- <img class="introParisImg" src="media/frenchtoast.webp" alt="image of a french toast cartoon"> -->
+        
+        </div>
+        
 
     </section>
+    <!-------------------------------------- Hotel section ------------------------------------------------------------>
     <section class="hotel" id="hotel">
 
 
@@ -55,7 +56,7 @@
 
             <div class="gridtwo">
                 <p class="info"> Great choice of hotel! In the former home of Prince Roland Bonaparte, overlooking the Eiffel Tower and River Seine, ultimate Parisian elegance lives on in the French capital. After being lovingly restored to its former grandeur, No.10
-                    avenue d’Iéna’s “Palais” was reborn as Shangri-La Hotel, Paris in December 2010. Centrally located in the 16th arrondissement, minutes from the Champs-Elysées, the hotel blends European grandeur with traditional Asian hospitality.
+                    avenue d’Iéna’s “Palais” was reborn as Shangri-La Hotel, Paris in December 2010. Centrally located in the 16th arrondissement, minutes from the Champs-Elysées, the hotel blends European grandeur with traditional Asian hospitality. </br> </br> Now that you have checked in, lets start sightseeing! </p>
                 </p>
             </div>
 
@@ -74,32 +75,26 @@
 
     </section>
 
-
-
+<!-------------------------------------- Weather section ------------------------------------------------------------>
 
     <section class="weather">
-        <!-- 
-        -weather Api  
-        -choose between 2 activities
-        -options what to do or go
-    -->
-
+     
         <p class="weatherstory">Before you go, lets have a look at the weather so that you can choose a suiting activity</p>
 
         <div class="partofweather2nd">
 
             <div class="weatherappcard">
-                <p class="city">PARIS</p>
-                <h2 class="temperature-value">- °<span>C</span></h2>
-                <img class="weather-icon" src="/assets/icons/weather/unknown.png" alt="weather icon">
-                <h5 class="temperature-description"> - </h5>
+                <p class="city">Paris Weather</p>
+                <h2 id="temperature">- °<span>C</span></h2>
+                <div id="weather-icon"><img src ="icons/unknown.png" alt="weather icon"></div>
+                <h5 id="temperature-description"> - </h5>
             </div>
 
             <div class="wheretogosction">
                 <p class="description">Where would you like to go?</p>
                 <div class="where">
-                    <a href="#" class="brbtn" target="blank">Le Louvre</a>
-                    <a href="#" class="brbtn" target="blank">The eiffel tower</a>
+                    <a href="#louvre" class="brbtn" target="blank">Le Louvre</a>
+                    <a href="#eiffel" class="brbtn" target="blank">The eiffel tower</a>
                 </div>
             </div>
 
@@ -107,7 +102,7 @@
 
     </section>
 <!-------------------------------------- Louvre section ------------------------------------------------------------>
-<section class="louvre">
+<section class="louvre" id="louvre">
     <h2 class="headinglouvre"> The Louvre Museum  </h2>
     <div class="gridlouvrecontainer">
         <h2 class="gridlouvreone">   </h2>
@@ -168,21 +163,27 @@
             </div>
         </div>
 
-    </div>
+                <div class="gridlouvrefive"> <p> Craving a coffee? Lets go to cafe Les Deux Magots! </p>  <a href="#cafe"> <button class="brbtn coffeebtn">Take me
+                        there!</button> </a> 
+
+                        </div>
 
     </div>
+
+    
+   
 
 </section>
 <!-------------------------------------- Eiffel tower section ------------------------------------------------------------>
-    <section class="eiffel">
+    <section class="eiffel" id="eiffel">
         <h2 class="headingeiffel"> Eiffel Tower </h2>
-        <div class="gridcontainer">
+        <div class="grideiffelcontainer">
             <div class="grideiffelone"> </div>
 
             <div class="grideiffeltwo"> <div class="eiffelcard">
                 <div class="fore">
                     
-                    <img class="image" src="IMG/towereiffel.png" alt="Bofinger restaurant">
+                    <img class="image" src="IMG/towereiffel.png" alt="Eiffel tower">
                 </div>
                 <div class="back">
                     <h2 class="title">History</h2>
@@ -198,22 +199,15 @@
 
                 <div class="eiffelcard">
                     <div class="fore">
-                        <img class="image" src="/assets/images/restaurant/l'escrgot.jpg" alt="Bofinger restaurant">
+                        <img class="image" src="IMG/et.jpeg" alt="Eiffel tower">
                     </div>
                     <div class="back">
-                        <h2 class="title">L’Escargot Montorgueil</h2>
-                        <p class="description">It’s all about the cuisine of the Burgundy region at this 19th-century eatery, and
-                            that means snails. Buttery and garlicky, it’s basically a given that you’ll order some while sitting
-                            inside a dining room trimmed with dark wood
-                            and a burgundy-red décor. The restaurant, like many on this list, is a historical monument, and the
-                            prices reflect a dining experience in a sumptuous Second Empire establishment -- but it does have a sort
-                            of snack menu with
-                            various salads, egg dishes, and soups that are more reasonably priced.
+                        <h2 class="title2"> Walk around the Eiffel Tower</h2>
+                        <p class="description">
             
                         </p>
                         <div class="backcardbtneiffel">
-                            <a href="http://escargotmontorgueil.com/#menu" class="brbtneiffel" target="blank">Menu</a>
-                            <a href="http://escargotmontorgueil.com/" class="brbtneiffel" target="blank">Websit</a>
+                            <a href="https://earth.google.com/web/@48.8590365,2.2937899,40.26664083a,0d,60y,185.91091747h,124.36629605t,0r/data=Ck8aTRJHCiUweDQ3ZTY2ZTI5NjRlMzRlMmQ6MHg4ZGRjYTllZTM4MGVmN2UwGZ-uSRLfbUhAIb1EBgMZWwJAKgxUb3JyZSBFaWZmZWwYASABIjAKLEFGMVFpcFBzU2p6ek15SUp0eGNkODBGRm44dGlHZHFsTnpTaGs4QWp5QXVQEAU" class="brbtneiffel" target="blank">Street View</a>
                         </div>
                     </div>
                 </div>
@@ -221,38 +215,42 @@
                 <div class="grideiffelfour">
                 <div class="eiffelcard">
                     <div class="fore">
-                        <img class="image" src="/assets/images/restaurant/le_train_bleu.jpg" alt="Bofinger restaurant">
+                        <img class="image" src="IMG/etower1.jpeg" alt="Eiffel tower">
                     </div>
                     <div class="back">
-                        <h2 class="title">Le Train Bleu</h2>
-                        <p class="description">When you think of train travel, good food rarely comes to mind, but at the Gare de
-                            Lyon train station, this little jewel box of a restaurant might change your mind. Whether you’re heading
-                            off to the south of France or just want
-                            a classic French meal, Le Train Bleu dining room -- entirely renovated in 2014 -- is the youngest on
-                            this list, but one of the most stunning. It’s no wonder Coco Chanel and Brigitte Bardot were regulars
-                            here.</p>
+                        <h2 class="title">Take the Eiffel tower elevator ride
+                        </h2><iframe width="450" height="315" src="https://www.youtube.com/embed/aZ-31-p3saU" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="description"></p>
                         <div class="backcardbtneiffel">
-                            <a href="https://menuonline.fr/clients/iframe.php?id=1330" class="brbtneiffel" target="blank">Menu</a>
-                            <a href="https://www.le-train-bleu.com/" class="brbtneiffel" target="blank">Websit</a>
+                            
                         </div>
                     </div>
                 </div>
             </div>
 
+                            <div class="grideiffelfive">
+                                <p> Craving a coffee? Lets go to cafe Les Deux Magots! </p> <a href="#cafe"> <button class="brbtn coffeebtn">Take me there!</button> </a> 
+
+
             </div>
 
-        </div>
+        
 
     </section>
     <!-------------------------------------- Cafe section ------------------------------------------------------------>
+      
+    </section>
+    <section class="cafe" id="cafe" >
+    
+    </section>
     <section class="cafe">
         <div class="gridcontainer">
 
             <div class="gridcafeone">
                 <img class="deux" src="IMG/Les deux Magots.jpeg" alt="background">
             </div>
-
-
 
             <div class="gridcafetwo">
                 <h2 class="heading"> Les Deux Magots </h2>
@@ -273,7 +271,7 @@
             <div class="gridcafefour"> <img class="coffee" src="IMG/coffee.jpeg" alt="Background" /></div>
 
             <div class="gridcafefive">
-                <p class="info2"> lorem ipsum lorem ipsumlorem ipsum lorem ipsum </p>
+                <p class="info2"> Finally some coffee! </p>
             </div>
 
             <div class="gridcafesix"> <img class="bw" src="IMG/bw.jpeg" alt="background"> </div>
@@ -283,36 +281,10 @@
 
         </div>
 
-        <section class="Notre dame">
+    <!-------------------------------------- resturaunt section ------------------------------------------------------------>
 
-            <div class="gridcontainer">
-
-                <div class="gridnotreone"> <img src="notre dame.jpg" alt="Background"></div>
-
-
-                <div class="gridnotretwo">
-                    <h2 class="heading"> Notre dame </h2>
-                    <p class="infonotre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui leo, bibendum eu pharetra non, viverra sed nibh. Maecenas mattis convallis mauris, at hendrerit elit venenatis sit amet. Vivamus sit amet accumsan tellus. Mauris vitae
-                        libero magna. Morbi fringilla mauris non eros sagittis, nec sollicitudin ipsum scelerisque. Pellentesque vel orci at magna egestas blandit et eget nisl. </p>
-
-                    <div class="gridtnotrehree">
-                        <div class="green">Youtube</div>
-                        <div class="gridfour">
-                            <div class="blue">API</div>
-
-
-                        </div>
-
-
-        </section>
-        <section class="restaurant" id="restaurant">
-
-            <!-- 
-    - recomendations of 3 restaurants 
-    -link to restaurant menu
-    - pictures
-    - map Api
-     -->
+        <section class="restaurant">
+    
             <div class="sectitle">
                 <h2 class="rests">Restaurants</h2>
                 <p class="restsstory">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque quo itaque quisquam consectetur cupiditate esse alias laborum velit veritatis iste, voluptate perferendis consequatur, nemo suscipit repellendus tempore est doloremque.</p>
@@ -417,7 +389,5 @@
         <script src="paris.js"></script>
 </body>
 <footer> Group 5 Hyper Island - Ephraim Valladares - Tuva Åkerlund - Hamed Khomjani - Elsa Bynke</footer>
-
-</html>
 
 </html>
