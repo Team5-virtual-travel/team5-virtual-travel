@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +12,15 @@
 
 <body>
 
-
     <section class="welcome">
-        <!-- -video as background   -->
         <nav class="navbar">
-            <a class="navlink" href="">Home</a>
-            <a class="navlink" href="">Accomodation</a>
-            <a class="navlink" href="#restaurant">Restaurants</a>
-            <a class="navlink" href="">Touristic Places</a>
-            <a class="navlink" href="#cartoonmap">Fast Travel</a>
+            <a class="navlink" href="#">Home</a>
+            <a class="navlink" href="">Paris Story</a>
+            <a class="navlink" href="">Hotels in Paris</a>
+            <a class="navlink" href="">Paris Weather</a>
+            <a class="navlink" href="">Tourist Map</a>
+            <a class="navlink" href="">Paris Coffee PLaces</a>
+            <a class="navlink" href="">Cuisine Parisienne</a>
         </nav>
         <video id="welcomeVideo" autoplay muted loop>
           <source src ="media/Paris 2.mp4" type="video/mp4">  
@@ -31,10 +30,8 @@
         <h2 class="welcomeText">Welcome to a Virtual Travel in Paris</h2>
 
         <div class="introText">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt soluta ad at delectus quae quas earum ducimus ullam veniam, eveniet qui sint exercitationem laboriosam quibusdam maxime laudantium quo recusandae, molestiae consequatur perferendis?
-                Sunt, placeat culpa nesciunt quam vitae vel voluptatem officia! Labore ad ea at veritatis mollitia illo tenetur totam.</p>
+            <p></p>
         </div>
-        <!-- -some french picture  -->
         <img class="introParisImg" src="media/frenchtoast.webp" alt="image of a french toast cartoon">
 
     </section>
@@ -70,25 +67,21 @@
 
     </section>
 
+    <section class="hotel">
 
-
+    </section>
 
     <section class="weather">
-        <!-- 
-        -weather Api  
-        -choose between 2 activities
-        -options what to do or go
-    -->
-
+     
         <p class="weatherstory">Before you go, lets have a look at the weather so that you can choose a suiting activity</p>
 
         <div class="partofweather2nd">
 
             <div class="weatherappcard">
-                <p class="city">PARIS</p>
-                <h2 class="temperature-value">- °<span>C</span></h2>
-                <img class="weather-icon" src="/assets/icons/weather/unknown.png" alt="weather icon">
-                <h5 class="temperature-description"> - </h5>
+                <p class="city">Paris Weather</p>
+                <h2 id="temperature">- °<span>C</span></h2>
+                <div id="weather-icon"><img src ="icons/unknown.png" alt="weather icon"></div>
+                <h5 id="temperature-description"> - </h5>
             </div>
 
             <div class="wheretogosction">
@@ -103,25 +96,34 @@
 
     </section>
 
-
-
-    <section class="eiffel">
-        <div class="gridcontainer">
-            <h2 class="gridone"> Eiffel Tower </h2>
-
-            <div class="gridtwo"> </div>
-
-
-
-        </div>
+    <section class="cartoonmap">
+        <svg width="100%" height="auto" viewBox="0 0 2415 1610" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <filter id="shadow" x="0" y="0" width="200%" height="200%">
+                    <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+                    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="20" />
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                </filter>
+            </defs>
+            <title>cartoonmap</title>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <image id="map" x="0" y="0" width="2415" height="1610" href="/assets/images/map/map.png"></image>
+                <a href="https://goo.gl/maps/Hc7Bth58wzEMh4EJA" target="blank"><image id="angel" class="map-element angel" x="2045.49328" y="764" width="133.013436" height="525" href="/assets/images/map/angel.png"></image></a>
+                <a href="https://goo.gl/maps/mvsss4YSYULPehA36" target="blank"><image id="louvr" class="map-element louvr" x="1405.08045" y="663" width="204.839098" height="146" href="/assets/images/map/louvr.png"></image></a>
+                <a href="https://goo.gl/maps/8npYBGVZVuaMm2vi6" target="blank"><image id="arcdeteriomph" class="map-element arcdeteriomph" x="1031" y="433" width="185" height="187" href="/assets/images/map/arcdeteriomph.png"></image></a>
+                <a href="https://goo.gl/maps/StmvVom49i6Ext8X7" target="blank"><image id="bigone" class="map-element bigone" x="1497.994" y="9" width="281.916" height="382" href="/assets/images/map/bigone.png"></image></a>
+                <a href="https://goo.gl/maps/GeUBjzmVP8TuDVey7" target="blank"><image id="church" class="map-element church" x="1620.9388" y="757" width="123.122407" height="130" href="/assets/images/map/church.png"></image></a>
+                <a href="https://goo.gl/maps/aEQhDtutXoMHhRgX6" target="blank"><image id="et" class="map-element et" x="1162.2375" y="423" width="210.525" height="525" href="/assets/images/map/et.png"></image></a>
+            </g>
+        </svg>
 
     </section>
+
+    <section class="eiffel">
+      
+    </section>
     <section class="louvre">
-        <!-- 
-            - info
-            -youtube link to a louvre video
-            -map APi  
-            -link to section "coffee" -->
+    
     </section>
     <section class="cafe">
         <div class="gridcontainer">
@@ -129,8 +131,6 @@
             <div class="gridcafeone">
                 <img class="deux" src="IMG/Les deux Magots.jpeg" alt="background">
             </div>
-
-
 
             <div class="gridcafetwo">
                 <h2 class="heading"> Les Deux Magots </h2>
@@ -161,36 +161,9 @@
 
         </div>
 
-        <section class="Notre dame">
 
-            <div class="gridcontainer">
-
-                <div class="gridnotreone"> <img src="notre dame.jpg" alt="Background"></div>
-
-
-                <div class="gridnotretwo">
-                    <h2 class="heading"> Notre dame </h2>
-                    <p class="infonotre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui leo, bibendum eu pharetra non, viverra sed nibh. Maecenas mattis convallis mauris, at hendrerit elit venenatis sit amet. Vivamus sit amet accumsan tellus. Mauris vitae
-                        libero magna. Morbi fringilla mauris non eros sagittis, nec sollicitudin ipsum scelerisque. Pellentesque vel orci at magna egestas blandit et eget nisl. </p>
-
-                    <div class="gridtnotrehree">
-                        <div class="green">Youtube</div>
-                        <div class="gridfour">
-                            <div class="blue">API</div>
-
-
-                        </div>
-
-
-        </section>
-        <section class="restaurant" id="restaurant">
-
-            <!-- 
-    - recomendations of 3 restaurants 
-    -link to restaurant menu
-    - pictures
-    - map Api
-     -->
+        <section class="restaurant">
+    
             <div class="sectitle">
                 <h2 class="rests">Restaurants</h2>
                 <p class="restsstory">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque quo itaque quisquam consectetur cupiditate esse alias laborum velit veritatis iste, voluptate perferendis consequatur, nemo suscipit repellendus tempore est doloremque.</p>
@@ -249,53 +222,9 @@
             </div>
         </section>
 
-        <section class="cartoonmap" id="cartoonmap">
-            <div class="cartoonmaplocation">
-                <svg width="100%" height="auto" viewBox="0 0 2415 1610" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <filter id="shadow" x="0" y="0" width="200%" height="200%">
-                            <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
-                            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="20" />
-                            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-                        </filter>
-                    </defs>
-                    <title>cartoonmap</title>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <image id="map" x="0" y="0" width="2415" height="1610" href="/assets/images/map/map.png"></image>
-                        <a href="https://goo.gl/maps/Hc7Bth58wzEMh4EJA" target="blank">
-                            <image id="angel" class="map-element angel" x="2045.49328" y="764" width="133.013436" height="525"
-                                href="/assets/images/map/angel.png"></image>
-                        </a>
-                        <a href="https://goo.gl/maps/mvsss4YSYULPehA36" target="blank">
-                            <image id="louvr" class="map-element louvr" x="1405.08045" y="663" width="204.839098" height="146"
-                                href="/assets/images/map/louvr.png"></image>
-                        </a>
-                        <a href="https://goo.gl/maps/uKBgp5c5vktTYcVp9" target="blank">
-                            <image id="arcdeteriomph" class="map-element arcdeteriomph" x="1031" y="433" width="185" height="187"
-                                href="/assets/images/map/arcdeteriomph.png"></image>
-                        </a>
-                        <a href="https://goo.gl/maps/StmvVom49i6Ext8X7" target="blank">
-                            <image id="bigone" class="map-element bigone" x="1497.994" y="9" width="281.916" height="382"
-                                href="/assets/images/map/bigone.png"></image>
-                        </a>
-                        <a href="https://goo.gl/maps/GeUBjzmVP8TuDVey7" target="blank">
-                            <image id="church" class="map-element church" x="1620.9388" y="757" width="123.122407" height="130"
-                                href="/assets/images/map/church.png"></image>
-                        </a>
-                        <a href="https://goo.gl/maps/aEQhDtutXoMHhRgX6" target="blank">
-                            <image id="et" class="map-element et" x="1162.2375" y="423" width="210.525" height="525"
-                                href="/assets/images/map/et.png"></image>
-                        </a>
-                    </g>
-                </svg>
-            </div>
-        </section>
-
 
         <script src="paris.js"></script>
 </body>
 <footer> Group 5 Hyper Island - Ephraim Valladares - Tuva Åkerlund - Hamed Khomjani - Elsa Bynke</footer>
-
-</html>
 
 </html>
