@@ -8,15 +8,16 @@ img {
     width: 100%;
 }
 
-
-/* html {
-    height: 100%;
+html {
+    scroll-behavior: smooth;
+    /*height: 100%;
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;*/
 }
 
-body {
+
+/*body {
     font-size: 2rem;
     height: 100%;
     margin: 0;
