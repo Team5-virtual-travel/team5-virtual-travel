@@ -1,50 +1,18 @@
-// Tutorial by http://youtube.com/CodeExplained
-// api key : 82005d27a116c2880c8f0fcb866998a0
-
 // SELECT ELEMENTS
-const iconElement = document.querySelector(".weather-icon");
-const tempElement = document.querySelector(".temperature-value");
-const descElement = document.querySelector(".temperature-description");
-const locationElement = document.querySelector(".location");
-const notificationElement = document.querySelector(".notification");
+const restaurantsElement = document.querySelector("#restaurants");
 
-// App data
-const weather = {};
+/*var latitude = 48.8566;
+var longitude = 2.3522;*/
 
-weather.temperature = {
-    unit: "celsius"
-}
+let restaurants = [];
 
-// APP CONSTS AND VARS
-const KELVIN = 273;
-// API KEY
-const key = "98deffe286a918ce942840b99394c414";
 
-// CHECK IF BROWSER SUPPORTS GEOLOCATION
-if ('geolocation' in navigator) {
-    navigator.geolocation.getCurrentPosition(setPosition, showError);
-} else {
-    notificationElement.style.display = "block";
-    notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
-}
+getRestaurants(48.864716, 2.349014);
 
-// SET USER'S POSITION
-function setPosition(position) {
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.longitude;
 
-    getWeather(latitude, longitude);
-}
-
-// SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
-function showError(error) {
-    notificationElement.style.display = "block";
-    notificationElement.innerHTML = `<p> ${error.message} </p>`;
-}
-
-// GET WEATHER FROM API PROVIDER
-function getWeather(latitude, longitude) {
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+// GET RESTAURANTS FROM API PROVIDER
+function getRestaurants(latitude, longitude) {
+    let api = `https://developers.zomato.com/api/v2.1/search?apikey=61bfdd81202a25034b43d924547686cb&start=${10}&count=3&lat=${latitude}&lon=${longitude}&sort=rating`;
 
     fetch(api)
         .then(function(response) {
@@ -52,42 +20,32 @@ function getWeather(latitude, longitude) {
             return data;
         })
         .then(function(data) {
-            weather.temperature.value = Math.floor(data.main.temp - KELVIN);
-            weather.description = data.weather[0].description;
-            weather.iconId = data.weather[0].icon;
-            weather.city = data.name;
-            weather.country = data.sys.country;
+            console.log(data)
+            restaurants = data.restaurants;
         })
         .then(function() {
-            displayWeather();
+            displayRestaurants();
         });
 }
 
-// DISPLAY WEATHER TO UI
-function displayWeather() {
-    iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
-    descElement.innerHTML = weather.description;
-    locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+// DISPLAY RESTAURANTS TO UI
+function displayRestaurants() {
+    restaurants.map((restaurant) => {
+        restaurantsElement.innerHTML = restaurantsElement.innerHTML + `<div class="restaurantcard">
+        <div class="fore">
+            <img class="image" src="${restaurant.restaurant.featured_image ? restaurant.restaurant.featured_image : "assets/images/restaurant/1.jpg"}" alt="${restaurant.restaurant.name}">
+        </div>
+        <div class="back">
+            <h2 class="title">${restaurant.restaurant.name}</h2>
+            <p class="description"> Rating: ${restaurant.restaurant.user_rating.aggregate_rating} from 5</p>
+            <p class="description"> ${restaurant.restaurant.user_rating.rating_text} </p>
+            <p class="description">Average cost for two: ${restaurant.restaurant.average_cost_for_two} $</p>
+            <p class="description">Open from: ${restaurant.restaurant.timings} </p>
+            <div class="backcardbtn">
+                <a href="${restaurant.restaurant.menu_url}" class="brbtn" target="blank">Menu</a>
+                <a href="${restaurant.restaurant.url}" class="brbtn" target="blank">Websit</a>
+            </div>
+        </div>
+    </div>`
+    }).join("")
 }
-
-// C to F conversion
-function celsiusToFahrenheit(temperature) {
-    return (temperature * 9 / 5) + 32;
-}
-
-// WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENET
-tempElement.addEventListener("click", function() {
-    if (weather.temperature.value === undefined) return;
-
-    if (weather.temperature.unit == "celsius") {
-        let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
-        fahrenheit = Math.floor(fahrenheit);
-
-        tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
-        weather.temperature.unit = "fahrenheit";
-    } else {
-        tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
-        weather.temperature.unit = "celsius"
-    }
-});
