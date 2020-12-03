@@ -68,11 +68,10 @@ z-index: -1;
 
 .intro {
     height: 103vh;
-    background-image: url(IMG/streetparis.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
-
+        background-image: url(IMG/streetparis.jpeg);
 }
 
 .welcomeText {
@@ -84,15 +83,9 @@ z-index: -1;
 
     }
     
-    .welcomeText {
-        font-family: 'La Belle Aurore', cursive;
-        font-size: 3rem;
-        padding-top: 4rem;
-        color: black;
-                text-align: center;
-
+   
       
-    }
+    
     
     .introText {
         position: absolute;
@@ -742,6 +735,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: 70vh;
+
 }
 
 .weatherstory {
@@ -762,14 +756,15 @@ margin-bottom: 10px;
 }
 
 .weatherappcard {
-height: 300px;
-width: 200px;
+height: 350px;
+width: 230px;
 margin-right: 100px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 border-radius: 25px;
+border: 3px solid #1d5775;
 background-color: #8dc3db;
 font-size: 25px;
 line-height: 2;
@@ -779,8 +774,10 @@ line-height: 2;
 color: white;
 font-weight: bold;
 background-color: #1d5775;
-padding: 5px 30px 5px 30px;
+padding: 40px 30px 0px 30px;
 border-radius: 30px;
+width: 230px;
+
 }
 
 .weather-icon {
