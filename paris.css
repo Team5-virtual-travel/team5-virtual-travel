@@ -110,7 +110,7 @@ body {
     width: 160px;
     position: relative;
     margin-top: 380px;
-    margin-left: 40rem;
+    margin-left: 4rem;
 }
 
 .introbtn:hover {
@@ -835,17 +835,19 @@ input[type="text"] {
 .notretitle {
     color: #000000;
     font-family: 'La Belle Aurore', cursive;
-    font-size: 43px;
+    font-size: 55px;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: 60px;
     margin-bottom: 1px;
     text-align: center;
+
 }
 
 .notresubtitle {
-    color: #636262;
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 14px;
+    color: #020202;
+    font-family:“IM Fell French Canon”, serif;
+    line-height: 50px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 1px;
     text-align: center;
@@ -854,16 +856,17 @@ input[type="text"] {
 }
 
 .notreinfo {
-    color: #636262;
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 15px;
+    color: #000000;
+font-family: “IM Fell French Canon”, serif;
+line-height: 50px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 1px;
     text-align: center;
 }
 
-}
+
 
 .tab {
     display: inline-block;
@@ -895,7 +898,7 @@ input[type="text"] {
 }
 
 .notre {
-    color: #636262;
+    color: #000000;
     font-family: 'La Belle Aurore', cursive;
     font-size: 15px;
     font-weight: bold;
@@ -911,9 +914,10 @@ input[type="text"] {
 }
 
 .notrenextslide {
-    font-family: 'La Belle Aurore', cursive;
-    color: #636262;
-    font-size: 15px;
+    font-family: “IM Fell French Canon”, serif;
+    color: #000000;
+     line-height: 50px;
+    font-size: 20px;
 }
 /*------------------------------------------- restaurant section-----------------------------------------------  */
 
