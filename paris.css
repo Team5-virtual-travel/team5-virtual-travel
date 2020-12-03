@@ -829,8 +829,91 @@ input[type="text"] {
     left: 0;
     width: 100%;
 }
+/*<------------------------------------------ Notredame section ----------------------------------------------->*/
 
+.notretitle {
+    color: #000000;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 43px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    text-align: center;
+}
 
+.notresubtitle {
+    color: #636262;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: ;
+}
+
+.notreinfo {
+    color: #636262;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.notrecenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    size: 50%;
+}
+
+.notrebuttons {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.notreaction_btn {
+    width: 500px;
+    margin: 0 auto;
+}
+
+}
+
+.takemethere {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.notre {
+    color: #636262;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.notredame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notrenextslide {
+    font-family: 'La Belle Aurore', cursive;
+    color: #636262;
+    font-size: 15px;
+}
 /*------------------------------------------- restaurant section-----------------------------------------------  */
 
 .restaurant {
