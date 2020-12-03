@@ -91,7 +91,7 @@
         width: 60vw;
         margin-left: 20rem;
         margin-top: 3rem;
-        z-index: 2;
+        z-index: 1;
         line-height: 50px;
         font-size: 20px;
         background-color: rgb(245, 239, 232); opacity: 0.8;
@@ -851,7 +851,7 @@ input[type="text"] {
     width: 100%;
 }
 
-/*------------------------------------------- resturaunt section-----------------------------------------------  */
+/*------------------------------------------- restaurant section-----------------------------------------------  */
 
 .restaurant {
     letter-spacing: 1px;
@@ -896,7 +896,7 @@ input[type="text"] {
 }
 
 .restaurantcard {
-  height: 50rem;
+  height: 20rem;
   position: relative;
   perspective: 800px;
 }
@@ -943,7 +943,7 @@ input[type="text"] {
 }
 
 .restaurantcard .title {
-  margin-top: 40px;
+  margin-top: 100px;
   font-size: 2rem;
   text-align: center;
   font-family: "La Belle Aurore", cursive;

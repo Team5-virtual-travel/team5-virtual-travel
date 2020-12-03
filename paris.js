@@ -78,7 +78,7 @@ function displayRestaurants() {
             <p class="description">Open from: ${restaurant.restaurant.timings} </p>
             <div class="backcardbtn">
                 <a href="${restaurant.restaurant.menu_url}" class="brbtn" target="blank">Menu</a>
-                <a href="${restaurant.restaurant.url}" class="brbtn" target="blank">Websit</a>
+                <a href="${restaurant.restaurant.url}" class="brbtn" target="blank">Website</a>
             </div>
         </div>
     </div>`
