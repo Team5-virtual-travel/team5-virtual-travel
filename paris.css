@@ -147,9 +147,10 @@ body {
     margin-top: 20px;
 }
 
-.hotel2 {
-    /* border-radius: 5%; */
-}
+
+/*.hotel2 {
+    border-radius: 5%;
+}*/
 
 .gridtwo {
     display: grid;
@@ -870,10 +871,11 @@ input[type="text"] {
     text-align: center;
 }
 
-.restsstory {}
+
+/*.restsstory {}*/
 
 .restaurantcard {
-    height: 20rem;
+    height: 30rem;
     position: relative;
     perspective: 800px;
 }
