@@ -70,17 +70,17 @@ function displayRestaurants() {
         <div class="fore">
             <img class="image" src="${restaurant.restaurant.featured_image ? restaurant.restaurant.featured_image : "assets/images/restaurant/1.jpg"}" alt="${restaurant.restaurant.name}">
         </div>
-        <div class="back">
-            <h2 class="title">${restaurant.restaurant.name}</h2>
-            <p class="description"> Rating: ${restaurant.restaurant.user_rating.aggregate_rating} from 5</p>
-            <p class="description"> ${restaurant.restaurant.user_rating.rating_text} </p>
-            <p class="description">Average cost for two: ${restaurant.restaurant.average_cost_for_two} $</p>
-            <p class="description">Open from: ${restaurant.restaurant.timings} </p>
-            <div class="backcardbtn">
-                <a href="${restaurant.restaurant.menu_url}" class="brbtn" target="blank">Menu</a>
-                <a href="${restaurant.restaurant.url}" class="brbtn" target="blank">Website</a>
+            <div class="back">
+                    <h2 class="title">${restaurant.restaurant.name}</h2>
+                    <p class="description"> Rating: ${restaurant.restaurant.user_rating.aggregate_rating} from 5</p>
+                    <p class="description"> ${restaurant.restaurant.user_rating.rating_text} </p>
+                    <p class="description">Average cost for two: ${restaurant.restaurant.average_cost_for_two} $</p>
+                    <p class="description">Open from: ${restaurant.restaurant.timings} </p>
+                <div class="backcardbtn">
+                    <a href="${restaurant.restaurant.menu_url}" class="brbtn" target="blank">Menu</a>
+                    <a href="${restaurant.restaurant.url}" class="brbtn" target="blank">Website</a>
+                </div>
             </div>
-        </div>
-    </div>`
+        </div>`
     }).join("")
 }
