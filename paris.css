@@ -830,6 +830,8 @@ input[type="text"] {
     left: 0;
     width: 100%;
 }
+
+
 /*<------------------------------------------ Notredame section ----------------------------------------------->*/
 
 .notretitle {
@@ -840,33 +842,29 @@ input[type="text"] {
     margin-top: 60px;
     margin-bottom: 1px;
     text-align: center;
-
 }
 
 .notresubtitle {
     color: #020202;
-    font-family:“IM Fell French Canon”, serif;
+    font-family: “IM Fell French Canon”, serif;
     line-height: 50px;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 1px;
     text-align: center;
     margin-top: 50px;
-    padding-top: ;
 }
 
 .notreinfo {
     color: #000000;
-font-family: “IM Fell French Canon”, serif;
-line-height: 50px;
+    font-family: “IM Fell French Canon”, serif;
+    line-height: 50px;
     font-size: 20px;
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 1px;
     text-align: center;
 }
-
-
 
 .tab {
     display: inline-block;
@@ -889,8 +887,6 @@ line-height: 50px;
 .notreaction_btn {
     width: 500px;
     margin: 0 auto;
-}
-
 }
 
 .takemethere {
@@ -916,9 +912,11 @@ line-height: 50px;
 .notrenextslide {
     font-family: “IM Fell French Canon”, serif;
     color: #000000;
-     line-height: 50px;
+    line-height: 50px;
     font-size: 20px;
 }
+
+
 /*------------------------------------------- restaurant section-----------------------------------------------  */
 
 .restaurant {
