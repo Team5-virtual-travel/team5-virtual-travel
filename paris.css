@@ -860,7 +860,6 @@ input[type="text"] {
     font-family: “IM Fell French Canon”, serif;
     line-height: 50px;
     font-size: 20px;
-    font-weight: bold;
     margin-top: 0px;
     margin-bottom: 1px;
     text-align: center;
@@ -885,7 +884,7 @@ input[type="text"] {
 }
 
 .notreaction_btn {
-    width: 500px;
+    width: 800px;
     margin: 0 auto;
 }
 
